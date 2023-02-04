@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ {% if request.path == '/todo' %}
+    <footer class="mt-auto footer-white">
+ {% elif request.path == '/' or request.path == '/login' or request.path == '/signup' or request.path.startswith('/edit_action/') %}
+    <footer class="mt-auto footer-blue">
+ {% elif request.path == '/new_list' or request.path.startswith('/new_action/') or request.path == '/new_today' %}
+    <footer class="mt-auto footer-orange">
+ {% endif %}
+
+ <p>Claudia Church {{ year }}<a href= "https://github.com/claudiaacchurch?tab=repositories" class="fa-brands fa-github icons git-icons"></a></p>
+
+</footer>
+
+</html>

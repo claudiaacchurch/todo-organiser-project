@@ -1,0 +1,509 @@
+/* Navbar */
+.navbar-styles {
+    border-bottom-style: inset;
+    border-bottom-color: #443282;
+    border-bottom-width: 5px;
+}
+
+.navbar-media {
+    border-bottom-style: inset;
+    border-bottom-color: #443282;
+    border-bottom-width: 5px;
+}
+
+@media (max-width: 991px) {
+    .navbar-media {
+        border-bottom-style: inset;
+        border-bottom-color: #443282;
+        border-bottom-width: 5px;
+        margin-bottom: 5%;
+    }
+}
+
+.nav-link {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: #443282;
+    font-size: 1rem;
+    color: #443282;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.nav-active {
+    font-weight: 400;
+}
+
+.logo {
+    font-size: 5rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: #443282;
+    padding: 5% 0 0 0;
+    text-align: left;
+}
+
+.small-print {
+    font-size: 1rem;
+}
+
+.menu-button {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 100;
+    color: #443282;
+    border-color: #443282;
+    border-width: 2px;
+}
+
+/* Main backgrounds */
+.cover-container {
+    position: relative;
+    min-height: 100vh;
+    background-color: #b1daff;
+    padding: 0 !important;
+}
+
+.cover-container-white {
+    position: relative;
+    min-height: 100vh;
+    background-color: white;
+    padding: 0 !important;
+}
+
+.cover-container-orange {
+    position: relative;
+    min-height: 100vh;
+    background-color: #ffdcb9;
+    padding: 0 !important;
+}
+
+.blue-body {
+    background-color: #b1daff;
+}
+
+/* login & signup forms */
+.login-signup-form {
+    align:center;
+    margin: 5% 20% 5% 20%;
+    padding: 0 0;
+    border-style: inset;
+    border-color: black;
+    background-color: #ffdcb9;
+}
+
+.login-signup-box {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffdcb9;
+    padding: 5% 5%;
+    margin: 0 0 0 10%;
+    align: center;
+}
+
+.form-header {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    color: black;
+    padding: 5% 0;
+    text-align: left;
+}
+
+.form-control {
+    margin: 0 0 10% 0;
+    border-style: inset;
+    border-color: black;
+}
+
+.form {
+    width: 80%;
+}
+
+.align-message {
+    text-align: left;
+    color: red;
+}
+
+.control-label {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+/* Homepage */
+.todo-welcome {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: #443282;
+    font-size: 2rem;
+    color: black;
+    padding: 0 0 5% 0;
+}
+
+.homepage-form {
+    margin: 15% 0 0 10%;
+    position: relative;
+    left: 10%;
+    text-align: left;
+    line-height: 2.5;
+}
+
+.home_button {
+    background-color: #ffdcb9;
+    color: black;
+    margin-bottom: 2%;
+}
+
+.image-col {
+    background-color: #b1daff;
+}
+
+.home-img {
+    width: 90%;
+    margin: 1% 0 0 0;
+    padding-bottom: 5%;
+    transform: rotate(5deg);
+}
+
+/* List page */
+.title-block {
+margin: 5% 15% 5% 15%;
+min-width: 400px;
+}
+
+
+.list-titles {
+    background-color: #b1daff;
+}
+
+@media (min-width: 991px) {
+    .margin-sort {
+        background-color: #b1daff;
+        margin-bottom: 50%;
+
+    }
+}
+
+.list-head {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    left: 80px;
+}
+
+.list-head-sub {
+    position: absolute;
+    left: 80px;
+    margin: 20px 0 0 0;
+}
+
+.font-styling {
+    font-family: "Montserrat", sans-serif;
+}
+
+.today-schedule {
+    font-family: "Montserrat", sans-serif;
+    margin: 5% 15% 5% 15%;
+    min-width: 400px;
+}
+
+.checkboxes {
+    margin: 0 0 0 56%;
+    position: absolute;
+    right: 10px;
+    border-width: 20%;
+    border-color: black;
+}
+
+.today-del {
+    position: absolute;
+    top: 78%;
+    left: 94%;
+    color: black;
+}
+
+.today-del:hover{
+    color: grey;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+
+#new-list-section {
+    margin: 5% 20% 2% 20%;
+}
+
+.second-list-titles {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    margin: 0;
+    background-color: #ffdcb9;
+    font-size: 1rem;
+}
+
+.list-title-padding {
+    padding: 10px 10px 10px 10px;
+}
+
+.second-listings {
+    font-size: 2rem;
+}
+
+.timestamp-margin {
+    padding: 1% 1% 1% 0;
+    font-size: 1.2rem;
+}
+
+.add-item-atag {
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 20px 50px 20px;
+    border: 0;
+    font-size: 1rem;
+    background-color: #b1daff;
+    height: 40px;
+}
+
+.add-new-label {
+    background-color: #ffdcb9;
+}
+
+.list-margin {
+    padding: 2% 0 1% 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.note-margin {
+    padding: 1% 0;
+}
+
+.checkboxes-lists {
+    margin: 0 2% 0 56%;
+    position: absolute;
+    right: 30px;
+    top: 30%;
+    border-width: 20%;
+    border-color: black;
+    color: #443282;
+}
+
+.checkbox-today {
+    left: 120px;
+    top: 20px;
+}
+
+.checkboxes-lists:hover {
+    color: grey;
+}
+
+.edit-icon {
+    margin: 0 2% 0 56%;
+    position: absolute;
+    right: 30px;
+    top: 70%;
+}
+
+.delete-icon {
+    margin: 0 2% 0 56%;
+    position: absolute;
+    right: 3px;
+    top: 70%;
+}
+
+.edit-icons {
+    color: black;
+}
+
+.edit-icons:hover{
+    color: grey;
+}
+
+/* Footer */
+.footer-blue {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    background-color: #b1daff;
+    font-size: 1.1rem;
+    color: #443282;
+    position: sticky;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    padding: 2% 0 0 2%;
+}
+
+.footer-white {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    background-color: white;
+    font-size: 1.1rem;
+    color: #443282;
+    padding: 2% 0 0 2%;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+}
+
+.footer-orange {
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    background-color: #ffdcb9;;
+    font-size: 1.1rem;
+    color: #443282;
+    position: sticky;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    padding: 2% 0 0 0;
+}
+.git-icons {
+    margin: 0 2%;
+}
+
+.icons {
+    color: #443282;
+    text-decoration: none;
+}
+
+.icons:hover {
+    color: black;
+}
+
+/* New list */
+.newlist-form-header {
+    font-size: 2.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    color: black;
+    padding: 2% 0 5% 0;
+    text-align: left;
+}
+
+.my-form-header {
+margin-bottom: 5%;
+}
+
+.new-list-box {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffdcb9;
+    padding: 5% 10%;
+    margin: 0 0 0 22%;
+    text-align: center;
+    width: 60%;
+}
+
+.new-list-btn {
+    width: 20%;
+}
+
+.form-list {
+    position: relative;
+    right: 20%;
+    width: 100%
+}
+
+/* New action*/
+.action-row {
+    display: flex;
+}
+
+.action-col {
+   flex: 1;
+}
+
+.new-action-form {
+    margin: 5% 0 20% 0;
+}
+
+.form-control-label-action {
+    font-size: 1.5rem;
+    margin-right: 80%;
+    margin-bottom: 20%;
+}
+
+.form-action {
+    position: relative;
+    right: 70%;
+    width: 150%
+}
+
+.my-class {
+    margin-right: 20%;
+    margin-bottom: 20%;
+}
+
+.sub-btn {
+    margin-top: 5%;
+    width: 20%;
+    background-color: #b1daff;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    border-width: 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.sub-btn:hover{
+    background-color: #ffdcb9;
+}
+
+.complete-header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 2%;
+    background-color: #b1daff;
+    margin: 0;
+}
+
+.complete-header-today {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 2%;
+    background-color: #ffdcb9;
+    margin: 0;
+}
+
+/* Today form */
+.today-time {
+    width: 75%;
+    align: center;
+    position: relative;
+    right: 20%;
+}
+
+.today-minute {
+    position: relative;
+    right: 55%;
+}
+
+/*Edit page*/
+
+.sub-btn-edit {
+    margin-top: 5%;
+    width: 20%;
+    background-color: #ffdcb9;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    border-width: 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.sub-btn-edit:hover{
+    background-color:  #b1daff;
+}

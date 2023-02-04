@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% import "bootstrap/wtf.html" as wtf %}
+{% include 'header.html' %}
+<html lang="en">
+<div class="new-list-box">
+    <div class="my-form-header">
+        <h1 class="h3 mb-3 fw-normal newlist-form-header">New item for Today:</h1>
+        </div>
+      <form method="post">
+                {{ form.hidden_tag() }}
+                <div class="row action-row">
+                    <div class="action-col">
+                        {{ form.action.label(class="form-control-label-action") }}
+                    </div>
+                    <div class="action-col">
+                        {{ form.action(class="form-control form-list") }}
+                    </div>
+                </div>
+                  <div class="row action-row">
+                    <div class="action-col">
+                        {{ form.note.label(class="form-control-label-action") }}
+                    </div>
+                    <div class="action-col">
+                        {{ form.note(class="form-control form-list") }}
+                    </div>
+                </div>
+                <div class="row action-row">
+                    <div class="action-col">
+                     {{ form.hour.label(class="form-control-label-action") }}
+                     </div>
+                    <div class="action-col">
+                     {{ form.hour(class="form-control today-time") }}
+                     </div>
+                     <div class="action-col">
+                        {{ form.minute(class="form-control today-time today-minute") }}
+                     </div>
+                    </div>
+                  {{ form.submit(class="sub-btn") }}
+                  </form>
+    </div>
+</body>
+
+    {% include 'footer.html' %}
+
+</html>

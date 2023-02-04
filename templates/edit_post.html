@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% import "bootstrap/wtf.html" as wtf %}
+{% include 'header.html' %}
+<html lang="en">
+
+<body class="text-center login-body">
+    <div class="row new-action-form">
+      <div class="col-lg-6 col-md-10 mx-auto content">
+          <div>
+              <div class="my-form-header">
+          <h1 class="h3 mb-3 fw-normal newlist-form-header"> Edit action:</h1>
+                  </div>
+              <form method="POST">
+                {{ form.hidden_tag() }}
+                <div class="row action-row">
+                    <div class="action-col">
+                        {{ form.action.label(class="form-control-label-action") }}
+                    </div>
+                    <div class="action-col">
+                        {{ form.action(class="form-control form-action") }}
+                    </div>
+                </div>
+                  <div class="row action-row">
+                    <div class="action-col">
+                        {{ form.note.label(class="form-control-label-action") }}
+                    </div>
+                    <div class="action-col">
+                        {{ form.note(class="form-control form-action") }}
+                    </div>
+                </div>
+                <div class="row action-row">
+                    <div class="action-col">
+                        {{ form.day(class="form-control my-class") }}
+                    </div>
+                    <div class="action-col">
+                        {{ form.month(class="form-control my-class") }}
+                    </div>
+                    <div class="action-col">
+                     {{ form.hour(class="form-control my-class") }}
+                     </div>
+                     <div class="action-col">
+                        {{ form.minute(class="form-control my-class") }}
+                     </div>
+                    </div>
+                  {{ form.submit(class="sub-btn-edit") }}
+                  </form>
+                </div>
+            </div>
+      </div>
+{% include 'footer.html' %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
