@@ -105,7 +105,7 @@
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
-    color: black;
+    color: #001f4d;
     padding: 5% 0;
     text-align: left;
 }
@@ -113,11 +113,15 @@
 .form-control {
     margin: 0 0 10% 0;
     border-style: inset;
-    border-color: black;
+    border-color: #001f4d;
 }
 
 .form {
     width: 80%;
+}
+
+.form-btn {
+    background-color: #001f4d;
 }
 
 .align-message {
@@ -128,30 +132,47 @@
 .control-label {
     font-size: 1.5rem;
     text-align: left;
+    color: #001f4d;
 }
 
 /* Homepage */
 .todo-welcome {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    color: #443282;
-    font-size: 2rem;
-    color: black;
+    color:  #001f4d;
+    font-size: 3rem;
     padding: 0 0 5% 0;
+    text-shadow: 2px 2px #ffdcb9;
 }
 
 .homepage-form {
-    margin: 15% 0 0 10%;
-    position: relative;
-    left: 10%;
     text-align: left;
-    line-height: 2.5;
+    margin: 15% 0 0 20%;
 }
 
-.home_button {
-    background-color: #ffdcb9;
-    color: black;
+.home-label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #001f4d;
+}
+
+.email-homepage {
+    width: 80%;
+}
+
+.home-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background-color: #ffdcb7;
+    color: #001f4d;
     margin-bottom: 2%;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #001f4d;
+    border-width: 1px;
+    padding: 5px 8px;
+    margin-left: 30%;
 }
 
 .image-col {
@@ -202,8 +223,13 @@ min-width: 400px;
 
 .today-schedule {
     font-family: "Montserrat", sans-serif;
+    font-weight: 200;
     margin: 5% 15% 2% 15%;
     min-width: 400px;
+}
+
+.item-note {
+font-size: 0.9rem;
 }
 
 .checkboxes {
@@ -387,14 +413,15 @@ min-width: 400px;
     font-size: 2.3rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
-    color: black;
+    color: #001f4d;
     padding: 2% 0 5% 0;
     text-align: left;
 }
 
 .my-form-header {
-margin-bottom: 5%;
+    margin-bottom: 5%;
 }
+
 
 .new-list-box {
     font-family: "Montserrat", sans-serif;
@@ -432,6 +459,7 @@ margin-bottom: 5%;
     font-size: 1.5rem;
     margin-right: 80%;
     margin-bottom: 20%;
+    color: #001f4d;
 }
 
 .form-action {
@@ -449,7 +477,7 @@ margin-bottom: 5%;
     margin-top: 5%;
     width: 20%;
     background-color: #b1daff;
-    color: black;
+    color: #001f4d;
     font-family: "Montserrat", sans-serif;
     border-width: 0;
     border-radius: 5px;

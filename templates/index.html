@@ -8,8 +8,19 @@
       <div class="row home-contents">
           <div class="col-lg-5">
           <div class="homepage-form">
-            <h1 class="todo-welcome">Get started with ToDo: </h1>
-            {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "dark home_button"})}}
+            <h1 class="todo-welcome">Welcome to ToDo !</h1>
+              <form method="post">
+                {{ form.hidden_tag() }}
+                  <div class="row">
+                      <div class="col-lg-3">
+                        {{ form.email.label(class="form-control-label home-label") }}
+                      </div>
+                      <div class="col-lg-9">
+                        {{ form.email(class="form-control email-homepage") }}
+                      </div>
+                      </div>
+                  {{ form.submit(class="home-button") }}
+              </form>
           </div>
 
           </div>

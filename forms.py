@@ -8,8 +8,8 @@ timestamp = datetime.now()
 
 
 class HomeForm(FlaskForm):
-    email = StringField("Enter user email:", validators=[DataRequired()])
-    submit = SubmitField("Go to ToDo")
+    email = StringField("Email:", validators=[DataRequired()])
+    submit = SubmitField("Sign in")
 
 
 class LoginForm(FlaskForm):
