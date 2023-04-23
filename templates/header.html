@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,22 +30,16 @@
     <script src="https://kit.fontawesome.com/2307716659.js" crossorigin="anonymous"></script>
 <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link href="{{ url_for('static', filename='styles.css')}}" rel="stylesheet">
   </head>
-
-     {% if request.path == '/todo' %}
-        <div class="cover-container-white d-flex w-100 h-100 p-3 mx-auto flex-column">
-     {% elif request.path == '/' or request.path == '/login' or request.path == '/signup' or request.path.startswith('/edit_action/') %}
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column text-center">
-     {% elif request.path == '/new_list' or request.path.startswith('/new_action/') or request.path == '/new_today' %}
-        <div class="cover-container-orange d-flex w-100 h-100 p-3 mx-auto flex-column text-center">
-      {% endif %}
 
  <header class="mb-auto">
 
 <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light navbar-sticky" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-sticky" id="mainNav">
             {% if request.path == '/todo' %}
                 <div class="container navbar-media">
             {% else %}
@@ -116,6 +109,6 @@
                     </ul>
                 </div>
             </div>
+          </div>
         </nav>
     </header>
-</html>
