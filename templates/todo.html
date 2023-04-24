@@ -5,6 +5,7 @@
 
 <body>
 <div class="whole-page-container">
+    <div class="content-wrap">
 
     <div class="title-row">
         <!--  List titles:-->
@@ -26,7 +27,7 @@
                 {% endif %}
                 <div class="d-flex gap-2 w-100 justify-content-between">
                     <div>
-                        <h6 class="mb-0 list-head">{{ list.title }}</h6>
+                        <h6 class="mb-0 list-head bigger-font">{{ list.title }}</h6>
                         <p class="mb-0 opacity-75 list-head-sub">{{list.type_list}}</p>
                     </div>
                     <small class="opacity-50 text-nowrap timestamps">{{ list.creation_time.strftime('%d
@@ -52,11 +53,11 @@
         <div class="title-row-sub">
         <div class="today-list">
             <div class="list-group mx-0 w-auto margin-sort">
-                <span class="list-group-item d-flex gap-3 py-3 list-titles" aria-current="true">
+                <span class="list-group-item d-flex gap-3 py-3 list-head-on-own" aria-current="true">
                 <i class="fa-solid fa-list fa-2x"></i>
                 <div class="d-flex gap-2 justify-content-between">
                     <div>
-                        <h6 class="mb-0 list-head-on-own">Today</h6>
+                        <h6 class="mb-0 bigger-font">Today</h6>
                     </div>
                     <small class="opacity-50 text-nowrap">{{ timestamp.strftime('%d %b %Y')}}</small>
                 </div>
@@ -80,13 +81,13 @@
                                 {% endif %}
                             </div>
                             <div class="today-inner today-icons">
-                                <a href="{{ url_for('complete_item', item_id=item.id) }}" class="checkboxes-lists checkbox-today"><i
+                                <a class="black-icon" href="{{ url_for('complete_item', item_id=item.id) }}" class="checkboxes-lists checkbox-today"><i
                                       class="fa-regular fa-square-check fa-lg"></i></a>
                             </div>
                             <div class="today-inner">
-                                <a href="{{url_for('delete_today', item_id=item.id) }}"><i
+                                <a class="black-icon" href="{{url_for('delete_today', item_id=item.id) }}"><i
                                       class="fa-solid fa-trash fa-sm bin-icon today-del"></i></a>
-                                <a href="{{url_for('edit_today', item_id=item.id) }}"><i
+                                <a class="black-icon" href="{{url_for('edit_today', item_id=item.id) }}"><i
                                       class="fa-solid fa-pen-to-square edit-icon edit-icons"></i></a>
                             </div>
                         </div>
@@ -100,14 +101,12 @@
                 {% for item in today_item %}
                     {% if item.complete == True %}
                         {% if loop.first %}
-                            <p class="complete-header-today">Completed:</p>
+                            <p class="list-group-item d-flex gap-3 py-3 completed-today">Completed:</p>
                         {% endif %}
                         <label class="list-group-item gap-2">
                             <span>
                                 <b>{{ item.action }}</b>
                                 <p class="item-note">{{ item.note }}</p>
-                                <a href="{{url_for('delete_today', item_id=item.id) }}"><i
-                                  class="fa-solid fa-trash fa-sm bin-icon today-del"></i></a>
                             </span>
                         </label>
                 {% endif %}
@@ -124,7 +123,7 @@
         </div>
 </div> <!-- top row -->
 
-<div class="b-example-divider"></div>
+<hr class="divider">
 
 
 <!--Iterate over lists in database -->
@@ -136,9 +135,9 @@
                 <span class="list-group-item gap-3 py-3 second-list-titles" aria-current="true">
                     <div class="gap-2 w-100 justify-content-between">
                         <div class="list-title-padding">
-                            <h6 class="mb-0 list-head-on-own second-listings ">{{new_list.title}}</h6>
+                            <h6 class="mb-0 second-listings">{{new_list.title}}</h6>
                             <div class="delete-icon">
-                                <a href="{{url_for('delete_list', list_id=new_list.id) }}"><i
+                                <a class="black-icon" href="{{url_for('delete_list', list_id=new_list.id) }}"><i
                      class="fa-solid fa-trash bin-icon edit-icons"></i></a>
                             </div>
                             {% if new_list.type_list == "Daily" %}
@@ -156,18 +155,18 @@
                             <label class="list-group-item gap-2">
                                 <div class="list-margin">
                                 <span>
-                                    {{action.action}}
-                                    <small class="d-block text-muted note-margin">{{action.note}}</small>
-                                    <small class="d-block text-muted note-margin">{{action.reminder.strftime('%d %b %H:%M') }}</small>
-                                    <a href="{{ url_for('complete_action', action_id=action.id) }}" class="checkboxes-lists"><i
-                                            class="fa-regular fa-square-check fa-lg"></i></a>
-                                    <div class="delete-icon">
-                                        <a href="{{url_for('delete_action_item', action_id=action.id) }}"><i
-                            class="fa-solid fa-trash bin-icon edit-icons"></i></a>
-                                    </div>
-                                    <div class="edit-icon">
-                                        <a href="{{url_for('edit_action', action_id=action.id) }}"><i
-                                                class="fa-solid fa-pen-to-square edit-icons"></i></a>
+                                    <div class="list-item-flex">
+                                        <div class="inner-item-flex">
+                                            {{action.action}}
+                                            <small class="d-block text-muted note-margin">{{action.note}}</small>
+                                        </div>
+                                        <div class="inner-item-flex">
+                                            <small class="d-block text-muted note-margin">{{action.reminder.strftime('%d %b %H:%M') }}</small>
+                                        </div>
+                                        <div class="inner-item-flex">
+                                            <a class="black-icon" href="{{ url_for('complete_action', action_id=action.id) }}" class="checkboxes-lists"><i
+                                                class="fa-regular fa-square-check fa-lg"></i></a>
+                                          </div>
                                     </div>
                                 </span>
                                 </div>
@@ -180,7 +179,7 @@
                 {% for action in actions %}
                     {% if action.complete == True %}
                         {% if loop.first %}
-                            <p class="complete-header">Completed:</p>
+                            <p class="list-group-item d-flex gap-3 py-3 completed-list">Completed:</p>
                         {% endif %}
                         {% if action.list_id == new_list.id %}
                             <label class="list-group-item gap-2">
@@ -188,10 +187,6 @@
                                 <span>
                                     {{action.action}}
                                     <small class="d-block text-muted note-margin">{{action.note}}</small>
-                                    <div class="delete-icon">
-                                        <a href="{{url_for('delete_action_item', action_id=action.id) }}"><i
-                                        class="fa-solid fa-trash bin-icon edit-icons"></i></a>
-                                    </div>
                                 </span>
                             </div>
                             </label>
@@ -225,9 +220,8 @@
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
 
+        </div>
+{% include 'footer.html' %}
 </div>  <!-- whole page container -->
 </body>
-
-{% include 'footer.html' %}
-
 </html>

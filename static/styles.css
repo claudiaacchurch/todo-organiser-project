@@ -3,6 +3,10 @@ html {
     font-size: 16px;
 }
 
+html, body {
+  height: 100%;
+}
+
 /* Navbar */
 
 .navbar {
@@ -49,7 +53,15 @@ padding: 0.5% 0;
 #main {
     background-color: #efeeee;
     color: #1c3d5a;
+}
+
+.home-wrap {
     min-height: 100vh;
+    flex: 1;
+}
+
+body {
+    background-color: #efeeee;
 }
 
 .home-flex {
@@ -58,6 +70,10 @@ padding: 0.5% 0;
     justify-content: space-between;
     align-items: start;
     margin: 0 5% 0 8%;
+}
+
+.inner-flex {
+flex-basis: 50%;
 }
 
 .home-flex-form {
@@ -69,7 +85,7 @@ padding: 0.5% 0;
 
 .homepage-img {
     max-width: 40vw;
-    margin: 15% 0 5% 0;
+    margin: 10% 0 5% 0;
 }
 
 .home-title {
@@ -174,13 +190,18 @@ padding: 0.5% 0;
 .whole-page-container {
     display: flex;
     flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    min-height: 100vh;
+}
+.content-wrap {
+  flex: 1;
 }
 
 .title-row {
     display: flex;
     flex-direction: row;
     gap: 5em;
-    margin: 3%;
+    margin: 3% 5%;
 }
 
 .title-row-sub {
@@ -204,9 +225,80 @@ padding: 0.5% 0;
 .list-col {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 50%;
     margin: 3%;
+    margin-left: 25%;
+}
+
+.list-group-item {
+    border-width: 1px;
+    border-color: black;
+}
+
+.list-titles {
+    background-color: #ffa584;
+    color: black;
+}
+    .list-titles:hover {
+    background-color: #cc6540;
+    }
+
+.completed-today {
+    margin-bottom: 0;
+    background-color: #91b9e6;
+}
+
+.list-head-on-own{
+    background-color: #ffa584;
+}
+    .list-head-on-own:hover {
+    background-color: #ffa584;
+    }
+
+.divider {
+    background-color: #4169e0;
+    height: 10vh;
+    border-bottom: 1px solid black;
+}
+
+.second-list-titles {
+    border-width: 1px;
+    border-color: black;
+    background-color: #ffa584;
+}
+
+.list-group-item-action {
+    background-color: #ffa584;
+}
+
+.list-group-item-action:hover {
+    background-color: #cc6540;
+}
+
+.completed-list {
+    background-color: #f5f5f5;
+    margin-bottom: 0;
+}
+
+.second-listings {
+font-size: 2em;
+}
+
+.bigger-font {
+    font-size: 1.2em;
+}
+
+.black-icon {
+    color: black;
+}
+
+.list-item-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.inner-item-flex {
+    flex-basis: 30%;
 }
 /* footer */
 
